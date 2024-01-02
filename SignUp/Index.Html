@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Assets/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="Assets/CSS/Style.Css">
+  <title>SignUp</title>
+</head>
+
+<body class="bg-color">
+  <section class="container mx-auto my-5 text-center">
+    <div class="bg-color mx-auto w-75 p-5 Shadow-bg">
+      <h1 class="text-info mb-4">Smart Login System</h1>
+      <input type="text" id="signName" required placeholder="Enter Your Name" class="form-control mb-4">
+      <p id="usernameAlert" class="d-none text-danger">include at least 3 letters starting with capital, second name is optional</p>
+
+      <input type="email" id="signEmail" required placeholder="Enter Your Email" class="form-control mb-4">
+      <p id="userEmailAlert" class="d-none text-danger">name@example.com</p>
+
+      <input type="password" id="signPassword" required placeholder="Enter Your Password" class="form-control mb-4">
+      <p id="userPasswordAlert" class="d-none text-danger m-0">you must strength your password, from 5 to 15 characters</p>
+
+      <p class="text-success d-none" id="confirmMsg">Success</p>
+      <p class="text-danger d-none" id="accountExistMsg">this account is exist ! Try another one.</p>
+      <p class="text-danger d-none" id="tryAgainMsg">signUp failed ! Try again</p>
+
+<button class="btn btn-outline-info w-100">
+        SignUp
+      </button>
+      <p class="text-white mt-3">Do you have an account?
+        <a href="../Login/Index.Html" class="text-white text-decoration-none w-25 m-auto" id="signIn">signIn</a>
+
+      </p>
+    </div>
+  </section>
+  <script src="Assets/JS/Main.JS"></script>
+</body>
+
+</html>
